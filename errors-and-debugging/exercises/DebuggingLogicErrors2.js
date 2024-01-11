@@ -1,8 +1,8 @@
-// Let’s break the code down into smaller chunks.
-// Consider the first if/else block below. 
 // Add console.log(launchReady) after this block, then run the program.
+// Added console.log(launchReady) and it printed false
 
-//Given the fuelLevel value, should launchReady be true or false after the check?  Is the program behaving as expected?
+// Given the fuelLevel value, should launchReady be true or false after the check? Is the program behaving as expected?
+// As per the fuelLevel value, launchReady should be false after the check. Till first block it the program is behaving as expected.
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -16,6 +16,8 @@ if (fuelLevel >= 20000) {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
 }
+
+console.log(launchReady)
 
 // if (crewStatus && computerStatus === 'green'){
 //    console.log('Crew & computer cleared.');
