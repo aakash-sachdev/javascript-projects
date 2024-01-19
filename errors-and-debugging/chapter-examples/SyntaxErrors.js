@@ -1,2 +1,2 @@
-let day = Wednesday;
+let day = "Wednesday";
 console.log(day;

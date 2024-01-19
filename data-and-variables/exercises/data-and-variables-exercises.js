@@ -1,6 +1,6 @@
 // Declare and assign the variables of the data.
 
-let spaceShuttleName = "Determination";
+/*let spaceShuttleName = "Determination";
 let shuttleSpeedMph  = 17500;
 let marsDistanceInKm =	225000000 ;
 let moonDistanceInKm =	384400 ;
@@ -50,4 +50,6 @@ let daysToMoon = hoursToMoon / 24 ;
     console.log(milesToMoon) ;
     console.log(hoursToMoon) ;
     console.log(daysToMoon) ;
-    console.log(spaceShuttleName,"will take", daysToMoon, "days to reach Moon.");
+    console.log(spaceShuttleName,"will take", daysToMoon, "days to reach Moon.");*/
+
+    console.log("\naakash","Wilson","\nKaveh");
