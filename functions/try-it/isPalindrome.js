@@ -5,3 +5,5 @@ function reverse(str) {
 function isPalindrome(str) {
    return reverse(str) === str;
 }
+console.log(reverse("My name is Aakash"))
+console.log(isPalindrome("My name is Aakash"))
