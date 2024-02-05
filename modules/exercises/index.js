@@ -18,7 +18,7 @@ for (let i = 0; i<prompts.length; i++){
   let response = input.question(`Would you like to ${prompts[i]}? Y/N: `);
   if (response.toLowerCase()==='y'){
     if (i===0){
-      printAll(astronauts, testTitles, scores);
+      printAll.printAll(astronauts, testTitles, scores);
       //Call 'printAll' here and pass in all necessary arguments.
     } else if (i===1){
       for (let j = 0; j<testTitles.length; j++){
@@ -31,7 +31,7 @@ for (let i = 0; i<prompts.length; i++){
         console.log(`${astronauts[j]}'s test average = ${avg}%.`);
       }
     } else {
-      let walker =  randomSelect.randomSelect(astronauts); //Call 'randomSelect' to pick a spacewalker from the astronauts array.
+      let walker =  randomSelect.randomFromArray(astronauts); //Call 'randomSelect' to pick a spacewalker from the astronauts array.
       console.log(`${walker} is the next spacewalker.`);
     }
   } else {
