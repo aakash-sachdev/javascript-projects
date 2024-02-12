@@ -104,13 +104,24 @@ console.log(array1);
 
 console.log ("**************************************************************************");
 
-
-array1.splice(2,4,"Bulldog");
+console.log(array1.slice());
 console.log(array1);
 
 console.log ("**************************************************************************");
 
+let combinedArray = array1.concat(sups);
+console.log(combinedArray);
 
-array1.splice(2,4,"Bulldog");
-console.log(array1);
+console.log ("**************************************************************************");
+
+
+let strSups = sups.join(" ");
+console.log(strSups);
+console.log(sups);
+
+console.log ("**************************************************************************");
+
+
+let supsCopy = strSups.split(" ");
+console.log(supsCopy);
 
