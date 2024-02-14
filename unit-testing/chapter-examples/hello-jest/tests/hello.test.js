@@ -1,4 +1,4 @@
-const {msPerYear, spiderman} = require('../hello.js');
+const {msPerYear, spiderman, isAlphaOnly} = require('../hello.js');
 
 // describe("hello world test", function(){
 
@@ -96,11 +96,28 @@ describe("The Spider-Man object ", function(){
     
     });
     
-    
-    // it("Should have a property called 'age' with value greater 30 and under 40", function(){
-    
-    //     expect(spiderman.age).toBeGreaterThan(30);
-    //     expect(spiderman.age).toBeLessThan(40);
-    // });
+}); 
 
-});    
+let batman;
+beforeEach (function () {
+    batman = {
+        fullName: "Bruce Wayne",
+        nickName: "Bat",
+        age: Math.round((new Date() - new Date(1990, 11, 7)) / msPerYear),
+        superPowers: ["Billionair", "Gadget", "Cars", "Willpower", "Intelligence!"]
+    };
+});
+
+
+describe("The isAlphaOnly Function", function(){
+
+    it("Should return true if an alpha-only string is passed in", function(){
+        expect(isAlphaOnly(batman.nickName)).toBe(true);
+    });
+
+    it("Should return false if the string has numeric value", function(){
+       batman.age = String(batman.age);
+        expect(isAlphaOnly(batman.age)).toBe(false);
+    });
+
+});   
