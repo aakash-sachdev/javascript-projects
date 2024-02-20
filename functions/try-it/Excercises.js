@@ -106,16 +106,10 @@ function isPalindrome(str) {
 function makeDiamond(height){
 
     let diamonds="";
-    // for(let i=0; i<height; i++ ){
     diamonds += makeIsoscelesTriangle(height) +"\n"+ reverse(makeIsoscelesTriangle(height));
 
     return diamonds;
 }
     
-    // for(let j = 0; j < height; j++){
-    // diamonds += reverse(makeIsoscelesTriangle(height));
-    // }
-
-
 console.log(makeDiamond (5));
 console.log("-----------------------------------------------------------------");
