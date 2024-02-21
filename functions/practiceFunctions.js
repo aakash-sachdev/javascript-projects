@@ -111,3 +111,32 @@ console.log(divideNums(6,3));
 console.log(divideNums(4,0));
 console.log('****************************************************************************************');
 
+// Variable Scope:
+console.log("Variable Scope:");
+
+//Local Variables:
+let name = "Aakash";
+
+function sayHello (message) {
+    let greeting = `${message}, ${name}!` ;
+    console.log(greeting);
+}
+
+// Greet user & print name, message & greeting:
+sayHello("Good Morning");
+console.log(name);
+// console.log(message);
+// console.log(greeting);
+console.log('****************************************************************************************');
+
+
+// Variable Shadowing:
+console.log("Variable Shadowing");
+let color = "black";
+
+function describeItem(item, color) {
+    console.log(`It's a ${color} ${item}`);
+}
+describeItem("box","blue");
+console.log(color);
+console.log('****************************************************************************************');
