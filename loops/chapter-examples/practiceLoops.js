@@ -128,26 +128,60 @@ console.log("\nWhile Loops");
 
 // Han is keeping track of the distance while making the Kessel Run... he's about halfway through... let's help him count down!
 
+let distanceTotal = 12;
+let currentDistance = 6;
 
+while (currentDistance < distanceTotal) {
+    console.log(`Still speeding dangerously close to black hole! ${distanceTotal-currentDistance} parsec to go...`);
+    currentDistance++;
+}
 
+// example
 
+let nums = [3, 2, 56, 8, 11, 4];
+let j = 0;
+let hasBigNum = false;
+
+while(!hasBigNum && j < nums.length) {
+    if (nums [j] > 50) {
+        hasBigNum == true;
+    }
+    j++;
+}
 
 
 /* Searching for Something */
 console.log("\nSearching for Something");
 
 // Help Mando with his new bounty
-let bounties = ["smuggler", "thief", "child", "thief", "smuggler", "murderer", "thief"];
+let bounties = ["smuggler", "thief", "child", "thief", "smuggler", "murderer", "thief", "child"];
+
+let k =  0;
+let hasFoundChild = false;
+
+while(!hasFoundChild && k < bounties.length) {
+    console.log(`Searching at index ${k}`);
+    if (bounties[k] === "child"){
+        console.log(`Found the child at index ${k}`);
+        // hasFoundChild = true;
+    }
+    k++;
+}
 
 
 
 /* User Input Validation */
 console.log("\nUser Input Validation");
 
-const input = require('readline-sync');
+// const input = require('readline-sync');
 
 // Luke, Han, and Chewbacca are trying to rescue Leia, who is being held in cell #2187. Ask them for the cell block and if they are within the 2100-2200 blocks, tell them they're on the right track! Otherwise tell them to keep searching.
+// let blockNum = input.question("What cell block are you at now? ");
 
+// while (blockNum < 2100 || blockNum > 2200) {
+//     blockNum = input.question ('Nope! keep searching.');
+// }
+// console.log("You're really close! Now find cell 2187!");
 
 
 /** Nested Loops **/
@@ -160,3 +194,20 @@ let characters = [
 	["Bail Organa", "Princess Leia", "Mon Mothma", "Admiral Raddus"],
 	["Wedge Antilles", "Red Leader", "Gold Leader"],
 ];
+let leiaFound = false;
+
+for (let l = 0; l < characters.length; l++) {
+    console.log(`Selecting the group at index ${l}...`);
+    for (m = 0; m < characters[l].length; m++) {
+        if (characters[l][m] === "Princess Leia") {
+            console.log("\nFound Her! get the plans...\n");
+            leiaFound = true;
+            break;
+        } else {
+            console.log(`Nope, that was ${characters[l][m]}`)
+        }
+    }
+    if (leiaFound){
+        break;
+    }
+}
