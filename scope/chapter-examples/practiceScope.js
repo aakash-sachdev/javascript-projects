@@ -47,11 +47,13 @@
 // console.log(coolFunction());
 // console.log(coolerFunction());
 
-function myFunction(n) {
-    let a = 100;
-    return a + n;
-}
+// Example 4-
 
-let x = 0;
+// function myFunction(n) {
+//     let a = 100;
+//     return a + n;
+// }
 
-x = myFunction(x);
+// let x = 0;
+
+// x = myFunction(x);
