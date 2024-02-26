@@ -10,4 +10,4 @@ try {
     console.log("You tried to access an animal at index:", index);
 }
 
-console.log("the code goes on...");
+console.log("the code goes on.");
