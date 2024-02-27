@@ -3,12 +3,14 @@
 // Next, set default values for 1 or more of the parameters in constructor.
 
 class Astronaut {
-   constructor(name, age, mass){
-     this.name = name;
-     this.age = age;
-     this.mass = mass;
-   }
+  constructor(name, age, mass = 100){
+    this.name = name;
+    this.age = age;
+    this.mass = mass;
+  }
 }
+
+console.log(Astronaut);
 
 let tortoise = new Astronaut('Speedy', 120);
 
