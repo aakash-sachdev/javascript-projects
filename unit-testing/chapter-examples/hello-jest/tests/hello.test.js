@@ -1,28 +1,30 @@
-const {msPerYear, spiderman, isAlphaOnly} = require('../hello.js');
+const hello = require('../hello.js');
 
-// describe("hello world test", function(){
+describe("hello world test", function(){
 
-//       test("should return a custom message when name is specified", function(){
-//          expect(hello("Jest")).toBe("Hello, Jest!");
-//       });
+      test("should return a custom message when name is specified", function(){
+         expect(hello.hello("World")).toBe("Hello, World!");
+      });
 
-//       it("should return a general greeting when name is not specified", function(){
-//         expect(hello()).toBe("Hello, World!");
-//     });
+      it("should return a general greeting when name is not specified", function(){
+        expect(hello.hello()).toBe("Hello, World!");
+    });
 
-// });
+});
 
-// describe("do strings match", function(){
 
-//     test("should return a custom message 'Strings match!'when string matched", function(){
-//     expect(test1('Flower','Flower')).toBe('Strings match!');
-//     });
 
-//     it("should return a custom message 'No match!'when string don't match", function(){
-//     expect(test1('Flower','flower')).toBe('No match!');
-//     });
+describe("do strings match", function(){
+
+    test("should return a custom message 'Strings match!'when string matched", function(){
+    expect(hello.doStringsMatch('Flower','Flower')).toBe('Strings match!');
+    });
+
+    it("should return a custom message 'No match!'when string don't match", function(){
+    expect(hello.doStringsMatch('Flower','flower')).toBe('No match!');
+    });
       
-// });
+});
       
 
 // describe("The addTwoNums function", function(){
@@ -51,73 +53,73 @@ const {msPerYear, spiderman, isAlphaOnly} = require('../hello.js');
 // });
     
 
-describe("The msPerYear Variable", function(){
+// describe("The msPerYear Variable", function(){
 
-    it("Should have a value of 31557600000", function(){
-        // console.log(msPerYear);
-        expect(msPerYear).toEqual(31557600000);        
-    });
-});    
+//     it("Should have a value of 31557600000", function(){
+//         // console.log(msPerYear);
+//         expect(msPerYear).toEqual(31557600000);        
+//     });
+// });    
 
-describe("The Spider-Man object ", function(){
+// describe("The Spider-Man object ", function(){
 
-    it("Should have a property called 'realName' with value 'Peter Parker'", function(){
-        // console.log(msPerYear);
-        expect(spiderman.realName).toEqual('Peter Parker');
-    });
+//     it("Should have a property called 'realName' with value 'Peter Parker'", function(){
+//         // console.log(msPerYear);
+//         expect(spiderman.realName).toEqual('Peter Parker');
+//     });
   
 
-    it("Should have a property called 'nickName' with value 'Spidey'", function(){
-        // console.log(msPerYear);
-        expect(spiderman.nickName).toEqual('Spidy');
-        expect(spiderman.nickName).not.toEqual('Spider');
-    });
+//     it("Should have a property called 'nickName' with value 'Spidey'", function(){
+//         // console.log(msPerYear);
+//         expect(spiderman.nickName).toEqual('Spidy');
+//         expect(spiderman.nickName).not.toEqual('Spider');
+//     });
     
     
-    it("Should have an array called 'Powers' with values 'Web, Flexible, Sticky'", function(){
+//     it("Should have an array called 'Powers' with values 'Web, Flexible, Sticky'", function(){
 
-        expect(spiderman.powers).toContain('Web');
-        expect(spiderman.powers).toContain('Flexible');
-        expect(spiderman.powers).toContain('Sticky');
-    });
+//         expect(spiderman.powers).toContain('Web');
+//         expect(spiderman.powers).toContain('Flexible');
+//         expect(spiderman.powers).toContain('Sticky');
+//     });
     
     
-    it("Should have a property called 'age' with value greater 30 and under 40", function(){
+//     it("Should have a property called 'age' with value greater 30 and under 40", function(){
     
-        // console.log(spiderman.age);
-        expect(spiderman.age).toBeGreaterThan(30);
-        expect(spiderman.age).toBeLessThan(40);
-    });
+//         // console.log(spiderman.age);
+//         expect(spiderman.age).toBeGreaterThan(30);
+//         expect(spiderman.age).toBeLessThan(40);
+//     });
     
     
-    it("Should have a property called 'isSup' that is true", function(){
+//     it("Should have a property called 'isSup' that is true", function(){
         
-        expect(spiderman.isSup).toBe(true);
+//         expect(spiderman.isSup).toBe(true);
     
-    });
+//     });
     
-}); 
+// }); 
 
-let batman;
-beforeEach (function () {
-    batman = {
-        fullName: "Bruce Wayne",
-        nickName: "Bat",
-        age: Math.round((new Date() - new Date(1990, 11, 7)) / msPerYear),
-        superPowers: ["Billionair", "Gadget", "Cars", "Willpower", "Intelligence!"]
-    };
-});
+// let batman;
+// beforeEach (function () {
+//     batman = {
+//         fullName: "Bruce Wayne",
+//         nickName: "Bat",
+//         age: Math.round((new Date() - new Date(1990, 11, 7)) / msPerYear),
+//         superPowers: ["Billionair", "Gadget", "Cars", "Willpower", "Intelligence!"]
+//     };
+// });
 
 
-describe("The isAlphaOnly Function", function(){
+// describe("The isAlphaOnly Function", function(){
 
-    it("Should return true if an alpha-only string is passed in", function(){
-        expect(isAlphaOnly(batman.nickName)).toBe(true);
-    });
+//     it("Should return true if an alpha-only string is passed in", function(){
+//         expect(isAlphaOnly(batman.nickName)).toBe(true);
+//     });
 
-    it("Should return false if the string has numeric value", function(){
-       batman.age = String(batman.age);
-        expect(isAlphaOnly(batman.age)).toBe(false);
-    });
+//     it("Should return false if the string has numeric value", function(){
+//        batman.age = String(batman.age);
+//         expect(isAlphaOnly(batman.age)).toBe(false);
+//     });
 
-});   
+// });   
