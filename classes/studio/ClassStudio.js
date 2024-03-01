@@ -35,12 +35,12 @@ class CrewCandidate {
 }
 
 
- let  bubbaBear = new CrewCandidate('Bubba Bear', 135,  [88, 85, 90]);
- let merryMaltese = new CrewCandidate('Merry Maltese', 1.5, [93, 88, 97]);
- let gladGator = new CrewCandidate('Glad Gator', 225, [75, 78, 62]);
- 
- 
- console.log(`${bubbaBear.name} earned an average test score of ${bubbaBear.avgScore()}% and has a status of ${bubbaBear.status()}.`);
- console.log(`${merryMaltese.name} earned an average test score of ${merryMaltese.avgScore()}% and has a status of ${merryMaltese.status()}.`);
- console.log(`${gladGator.name} earned an average test score of ${gladGator.avgScore()}% and has a status of ${gladGator.status()}.`);
+let  bubbaBear = new CrewCandidate('Bubba Bear', 135,  [88, 85, 90]);
+let merryMaltese = new CrewCandidate('Merry Maltese', 1.5, [93, 88, 97]);
+let gladGator = new CrewCandidate('Glad Gator', 225, [75, 78, 62]);
+
+
+console.log(`${bubbaBear.name} earned an average test score of ${bubbaBear.avgScore()}% and has a status of ${bubbaBear.status()}.`);
+console.log(`${merryMaltese.name} earned an average test score of ${merryMaltese.avgScore()}% and has a status of ${merryMaltese.status()}.`);
+console.log(`${gladGator.name} earned an average test score of ${gladGator.avgScore()}% and has a status of ${gladGator.status()}.`);
 
