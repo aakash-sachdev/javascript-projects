@@ -1,0 +1,16 @@
+/* #heading {
+    color: blue;
+} */
+
+.heading{
+    color: blue;
+    text-decoration: line-through;
+}
+
+body{
+    background-color: yellow;
+}
+
+button{
+    color: blue;
+}
